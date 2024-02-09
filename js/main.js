@@ -26,23 +26,17 @@ const mostrarKnowledge = ()=>{
     knowledge.innerHTML = "aqui hablo sobre mis conocimientos";
 }
 const mostrarContact = ()=>{
+    borrar();
     contact.style.display ="block"
+    contact.innerHTML = `
+    <div class="container redes-sociales">
+    <div class="contenedor">
+      <a href="https://twitter.com/kanosk44" class="twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://github.com/Kanosk" class="github" target="_blank"><i class="fa fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/candido-nicolas-perez-verwer-971855220/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="./cv/cv_candidonpv.pdf" class="cv" id="cv" download><i class="fa-solid fa-file-pdf"></i></a>
+  </div>
+  `;
 }
-document.getElementById('btnSwitch').addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-bs-theme');
-    const moonIcon = '<i class="fa-solid fa-moon"></i>';
-    const sunIcon = '<i class="fa-solid fa-sun"></i>';
-    const lightFile = '<i class="fa-solid fa-file-pdf"></i>';
-    const darkFile = '<i class="fa-regular fa-file-pdf"></i>';
-    
-    if (currentTheme === 'dark') {
-        document.documentElement.setAttribute('data-bs-theme', 'light');
-        document.getElementById('btnSwitch').innerHTML = moonIcon;
-        document.getElementById('cv').innerHTML = lightFile;
-    } else {
-        document.documentElement.setAttribute('data-bs-theme', 'dark');
-        document.getElementById('btnSwitch').innerHTML = sunIcon;
-        document.getElementById('cv').innerHTML = darkFile;
-    }
-});
+
 

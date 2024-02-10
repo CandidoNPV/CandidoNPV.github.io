@@ -15,3 +15,15 @@ document.getElementById('btnSwitch').addEventListener('click', () => {
         document.getElementById('cv').innerHTML = darkFile;
     }
 });
+
+function toggleMenu() {
+    var btnMenu = document.getElementById("btnMenu");
+
+    if (btnMenu.classList.contains("fa-ellipsis")) {
+      btnMenu.classList.remove("fa-ellipsis");
+      btnMenu.classList.add("fa-xmark");
+    } else {
+      btnMenu.classList.remove("fa-xmark");
+      btnMenu.classList.add("fa-ellipsis");
+    }
+  }

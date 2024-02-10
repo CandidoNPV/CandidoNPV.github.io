@@ -29,13 +29,15 @@ const mostrarContact = ()=>{
     borrar();
     contact.style.display ="block"
     contact.innerHTML = `
-    <div class="container redes-sociales">
-    <div class="contenedor">
-      <a href="https://twitter.com/kanosk44" class="twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://github.com/Kanosk" class="github" target="_blank"><i class="fa fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/candido-nicolas-perez-verwer-971855220/" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
-      <a href="./cv/cv_candidonpv.pdf" class="cv" id="cv" download><i class="fa-solid fa-file-pdf"></i></a>
-  </div>
+    <h4><p class="text-center">Puedes ponerte en contacto conmigo de las siguientes maneras</p></h4>
+              <div class="container redes-sociales">
+                <div class="contenedor-contacto ">
+                <a href="mailto:candidonpv@gmail.com?subject=Correo desde candidonpv.github.io" class="mail red col-6 col-sm-4 col-md-2 " target="_blank"><i class="fa-solid fa-envelope-open-text"></i></a>
+                <a href="https://www.linkedin.com/in/candido-nicolas-perez-verwer-971855220/" class="linkedin red col-6 col-sm-4 col-md-2 " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Kanosk" class="github red col-6 col-sm-4 col-md-2 " target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://twitter.com/kanosk44" class="twitter red col-6 col-sm-4 col-md-2 " target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+              </div>
   `;
 }
 

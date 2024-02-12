@@ -8,8 +8,17 @@ a{
     text-decoration: none;
     color: black;
 }
+p{
+    text-justify: auto;
+}
+img{
+    max-width: 250px;
+    max-height: 250px;
+}
 footer{
     font-style: italic;
+    position: sticky;
+    bottom: 0;
 }
 .fa-sun{
     color: #fff;
@@ -31,7 +40,7 @@ footer{
     font-size: 60px;
 }
 .mail:hover{
-    background-image: linear-gradient(90deg, rgba(199,22,16,1) 19%, rgba(242,166,12,1) 63%);
+    background-color: #c71610;
     color: #fff;
 }
 .linkedin:hover{
@@ -49,4 +58,13 @@ footer{
 .contacto{
     margin-top: 8vh;
 }
-
+.imgmia{
+    width: 250px;
+    border-radius: 50%;
+}
+.ico-cono i{
+    font-size: 48px;
+}
+.fa-regular{
+    color: #fff;
+}

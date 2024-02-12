@@ -1,7 +1,6 @@
 var ini = document.getElementById('ini');
 var about = document.getElementById('sobre-mi');
 var proyect = document.getElementById('proyectos');
-var knowledge = document.getElementById('conocimientos');
 var contact = document.getElementById('contacto');
 
 const borrar = ()=>{
@@ -9,7 +8,6 @@ const borrar = ()=>{
     ini.style.display = "none";
     about.innerHTML = "";
     proyect.innerHTML = "";
-    knowledge.innerHTML = "";
     contact.innerHTML = "";
 };
 const mostrarIni = () =>{

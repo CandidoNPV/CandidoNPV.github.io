@@ -11,10 +11,12 @@ const borrar = ()=>{
     contact.innerHTML = "";
 };
 const mostrarIni = () =>{
-    borrar();s
+    borrar();
     ini.style.display = "block";
     ini.innerHTML = `
-   
+    <h3>Hola, Soy Cándido</h3>
+    <img src="./img/img.png" alt="mi-foto" title="Cándido y Sif, en orden de izquierda a derecha" class="imgmia mb-3">
+    <h4>Bienvenido a mi porfolio como desarrollador trainee</h4>
     `;
 }
 {/* <div class="justify-content-center text-center"><img src="./img/img.png" alt="mi-foto" title="Cándido y Sif, en orden de izquierda a derecha" class="imgmia mb-3"></div> */}

@@ -48,95 +48,87 @@ const mostrarAbout = ()=>{
             <i title="Laravel" class="me-4 fa-brands fa-laravel"></i>
           </div>
           <p>Puedes revisar mi curriculum aqui</p>
-          <a href="./cv/cv_candidonpv.pdf" class="cv" id="cv" target="_blank"><i class="fa-solid fa-file-pdf"></i></a>
+          <a href="./cv/cv_candidonpv.pdf" class="cv" id="cv" target="_blank" title="CV"><i class="fa-solid fa-file-pdf"></i></a>
         </div>
       </div>
        `;
 }
+
 const mostrarProyect = ()=>{
     borrar();
     proyect.style.display ="block"
     proyect.innerHTML = `
-<p>Por ahora solo tengo un proyecto propio, que estoy llevando a su versión web creando una API con los datos a mostrar</p>
-<div class="row">
-                    <div class="image"> 
-                      <img class="imgproye" src="./img/proyectos/propio/xus4me.png" title="Xus4me"> 
-                      <a href="https://github.com/Kanosk/Proyectos/tree/main/Propios/Xus4me" target="_blank">
-                        <i class="proyect fa-solid fa-link"></i>
-                      </a> 
+    <div class=" text-center">
+                 <p>Por ahora solo tengo un proyecto propio, que estoy llevando a su versión web creando una API con los datos a mostrar</p>
+                 <div class="row justify-content-center">
+                      <div class="image">
+                        <img class="imgproye" src="./img/proyectos/propio/xus4me.png" title="Xus4me">
+                        <a href="https://github.com/Kanosk/Proyectos/tree/main/Propios/Xus4me" target="_blank">
+                          <i class="proyect fa-solid fa-link"></i>
+                        </a>
+                      </div>
                     </div>
-                  </div>
-<p>Los demás proyectos son los creados en clase, ya siendo exámenes o trabajos y los creados haciendo cursos en internet</p>
-<p>Proyectos creados en DAW</p>
-<div class="row">
-                    <div class="image"> 
-                      <img class="imgproye" src="./img/proyectos/daw/cargarApi.png" title="Usar API"> 
-                      <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/DAW/2o-a%C3%B1o/Consumir-Api" target="_blank">
-                        <i class="proyect fa-solid fa-link"></i>
-                      </a> 
+                 <p>Los demás proyectos son los creados en clase, ya siendo exámenes o trabajos y los creados haciendo cursos en internet</p>
+                 <p class="title">Proyectos creados en DAW</p>
+                 <div class="row justify-content-center">
+                      <div class="image">
+                        <img class="imgproye" src="./img/proyectos/daw/cargarApi.png" title="Usar API">
+                        <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/DAW/2o-a%C3%B1o/Consumir-Api" target="_blank">
+                          <i class="proyect fa-solid fa-link"></i>
+                        </a>
+                      </div>
+                      <div class="image">
+                        <img class="imgproye" src="./img/proyectos/daw/filament.png" title="Dashboard">
+                        <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/DAW/2o-a%C3%B1o/Dashboard-filament" target="_blank">
+                          <i class="proyect fa-solid fa-link"></i>
+                        </a>
+                      </div>
+                      <div class="image">
+                        <img class="imgproye" src="./img/proyectos/daw/proyectoBase.png" title="Crud puro PHP">
+                        <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/DAW/1er-a%C3%B1o/proyectoBasePHP" target="_blank">
+                          <i class="proyect fa-solid fa-link"></i>
+                        </a>
+                      </div>
+                      <div class="image">
+                        <img class="imgproye" src="./img/proyectos/daw/swingJava.png" title="Interfaz visual de Java">
+                        <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/DAW/1er-a%C3%B1o/proyectoSwing/proyectoSwing" target="_blank">
+                          <i class="proyect fa-solid fa-link"></i>
+                        </a>
+                      </div>
                     </div>
-                    <div class="image"> 
-                      <img class="imgproye" src="./img/proyectos/daw/crearApi.png" title="Crear API"> 
-                      <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/DAW/2o-a%C3%B1o/Crear-ApiRest" target="_blank">
-                        <i class="proyect fa-solid fa-link"></i>
-                      </a> 
+                    <p class="title">Proyectos creados con cursos online</p>
+                    <div class="row justify-content-center">
+                      <div class="image">
+                        <img class="imgproye" src="./img/proyectos/udemy/bootstrap.png" title="Uso de Bootstrap">
+                        <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/Udemy/Practica-Bootstrap" target="_blank">
+                          <i class="proyect fa-solid fa-link"></i>
+                        </a>
+                      </div>
+                      <div class="image">
+                        <img class="imgproye" src="./img/proyectos/udemy/galeria.png" title="Galeria de imágenes">
+                        <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/Udemy/proyecto-Galeria" target="_blank">
+                          <i class="proyect fa-solid fa-link"></i>
+                        </a>
+                      </div>
+                      <div class="image">
+                        <img class="imgproye" src="./img/proyectos/udemy/portafolio.png" title="Ejemplo Portfolio">
+                        <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/Udemy/Practica-Portafolio" target="_blank">
+                          <i class="proyect fa-solid fa-link"></i>
+                        </a>
+                      </div>
+                      <div class="image">
+                        <img class="imgproye" src="./img/proyectos/udemy/restaurante.png" title="Ejemplo Restaurante">
+                        <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/Udemy/Practica-Restaurante" target="_blank">
+                          <i class="proyect fa-solid fa-link"></i>
+                        </a>
+                      </div>
                     </div>
-                    <div class="image"> 
-                      <img class="imgproye" src="./img/proyectos/daw/filament.png" title="Dashboard"> 
-                      <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/DAW/2o-a%C3%B1o/Dashboard-filament" target="_blank">
-                        <i class="proyect fa-solid fa-link"></i>
-                      </a> 
-                    </div>
-                    <div class="image"> 
-                      <img class="imgproye" src="./img/proyectos/daw/proyectoBase.png" title="Crud puro PHP"> 
-                      <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/DAW/1er-a%C3%B1o/proyectoBasePHP" target="_blank">
-                        <i class="proyect fa-solid fa-link"></i>
-                      </a> 
-                    </div>
-                    <div class="image"> 
-                      <img class="imgproye" src="./img/proyectos/daw/swingJava.png" title="Interfaz visual de Java"> 
-                      <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/DAW/1er-a%C3%B1o/proyectoSwing/proyectoSwing" target="_blank">
-                        <i class="proyect fa-solid fa-link"></i>
-                      </a> 
-                    </div>
-                  </div>
-                  <p>Proyectos creados con cursos online</p>
-                  <div class="row">
-                    <div class="image"> 
-                      <img class="imgproye" src="./img/proyectos/udemy/bootstrap.png" title="Uso de Bootstrap"> 
-                      <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/Udemy/Practica-Bootstrap" target="_blank">
-                        <i class="proyect fa-solid fa-link"></i>
-                      </a> 
-                    </div>
-                    <div class="image"> 
-                      <img class="imgproye" src="./img/proyectos/udemy/galeria.png" title="Galeria de imágenes"> 
-                      <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/Udemy/proyecto-Galeria" target="_blank">
-                        <i class="proyect fa-solid fa-link"></i>
-                      </a> 
-                    </div>
-                    <div class="image"> 
-                      <img class="imgproye" src="./img/proyectos/udemy/portafolio.png" title="Ejemplo Portfolio"> 
-                      <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/Udemy/Practica-Portafolio" target="_blank">
-                        <i class="proyect fa-solid fa-link"></i>
-                      </a> 
-                    </div>
-                    <div class="image"> 
-                      <img class="imgproye" src="./img/proyectos/udemy/restaurante.png" title="Ejemplo Restaurante"> 
-                      <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/Udemy/Practica-Restaurante" target="_blank">
-                        <i class="proyect fa-solid fa-link"></i>
-                      </a> 
-                    </div>
-                    <div class="image"> 
-                      <img class="imgproye" src="./img/proyectos/udemy/startup.png" title="Ejemplo para Startup"> 
-                      <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/Udemy/Practica-Startup" target="_blank">
-                        <i class="proyect fa-solid fa-link"></i>
-                      </a> 
-                    </div>
-                  </div>
-                  <p>para ver todos los proyectos que hay en el repositorio puedes acceder desde <a href="https://github.com/Kanosk/Proyectos/tree/main" target="_blank">aquí</a></p>
-
+                    <p class="title">Puedes ver mas en el repositorio <br>
+                      <a href="https://github.com/Kanosk/Proyectos/tree/main" target="_blank" class="ico"><i class="fa-brands fa-github"></i></a></p>
+               </div>
     `;
 }
+
 const mostrarContact = ()=>{
     borrar();
     contact.style.display ="block"

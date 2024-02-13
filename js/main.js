@@ -11,18 +11,19 @@ const borrar = ()=>{
     contact.innerHTML = "";
 };
 const mostrarIni = () =>{
-    borrar();
+    borrar();s
     ini.style.display = "block";
     ini.innerHTML = `
-    <p>Bienvenido a mi porfolio como desarrollador trainee</p>
+   
     `;
 }
+{/* <div class="justify-content-center text-center"><img src="./img/img.png" alt="mi-foto" title="Cándido y Sif, en orden de izquierda a derecha" class="imgmia mb-3"></div> */}
 
 const mostrarAbout = ()=>{
     borrar();
     about.style.display ="block"
     about.innerHTML = `
-        <div class="justify-content-center text-center"><img src="./img/img.png" alt="mi-foto" title="Cándido y Sif, en orden de izquierda a derecha" class="imgmia mb-3"></div>
+        
         <div class="texto ">
           <p>Soy un apasionado de la lectura, los animales  y la tecnología, también soy una persona curiosa y con muchas ganas de entender el funcionamiento de las cosas, lo que me hace estar en constante aprendizaje, proceso que disfruto al máximo.</p>
           <p>Tras varios vaivenes, terminé estudiando  lo que me gustaba desde un principio que era el ciclo superior de desarrollo de aplicaciones web. 

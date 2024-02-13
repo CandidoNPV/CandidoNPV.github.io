@@ -20,6 +20,12 @@ footer{
     position: relative;
     bottom: 0;
 }
+nav{
+    -webkit-box-shadow: 42px 65px 37px -39px rgba(41,39,41,1);
+-moz-box-shadow: 42px 65px 37px -39px rgba(41,39,41,1);
+box-shadow: 42px 65px 37px -39px rgba(41,39,41,1);
+margin-bottom: 8vh;
+}
 .fa-sun{
     color: #fff;
 }

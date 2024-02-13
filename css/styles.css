@@ -79,14 +79,13 @@ footer{
 
 .image {
     overflow: hidden;
-    height: 300px;
-    width: 300px;
+    height: 270px;
+    width: 270px;
     position: relative;
     cursor: pointer;
     margin: 0 15px;
-    box-shadow: 0 0 25px 1px rgba(0, 0, 0, .3);
     transition: .5s;
-    background-color: #555
+    border-radius: 0; /* Establece el border-radius inicial en 0 para que se vea cuadrado */
 }
 
 .image:after {
@@ -100,25 +99,29 @@ footer{
     transform: translate(-140%, -50%);
     background-color: blue;
     opacity: 0.8;
-    border-radius: 50%;
-    transition: .8s
+    transition: .8s;
+    border-radius: 0; /* Establece el border-radius inicial en 0 también aquí */
+}
+
+.image:hover, .image:hover:after {
+    border-radius: 50%; /* Cambia el border-radius al hacer hover */
 }
 
 .image:hover:after {
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 .image:hover img {
-    transform: translate(-50%, -50%) scale(1.3) rotate(20deg)
+    transform: translate(-50%, -50%) scale(1.3) rotate(20deg);
 }
 
 .imgproye {
     position: absolute;
-    height: 110%;
+    height: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: .8s
+    transition: .8s;
 }
 
 .proyect {
@@ -129,10 +132,10 @@ footer{
     transform: translate(-2000px, -50%);
     color: #fff;
     transition: .8s;
-    transition-timing-function: ease-in
+    transition-timing-function: ease-in;
 }
 
-.image:hover .proyect  {
+.image:hover .proyect {
     transform: translate(-50%, -50%);
-    transition-timing-function: ease
+    transition-timing-function: ease;
 }

@@ -16,7 +16,7 @@ const mostrarIni = () =>{
     ini.style.display = "block";
     ini.innerHTML = `
     <div class="row">
-                <div class="col-md-6 order-md-1 ">
+                <div class="col-md-8 order-md-1 ">
                     <div class="intro mt-5">
                         <h2>Hola, Soy Cándido</h2>
                         <h3>Bienvenido a mi porfolio como desarrollador junior</h3>

@@ -4,9 +4,15 @@
 h1{
     font-weight: 700;
 }
+h2{
+    text-decoration: underline;
+}
 a{
     text-decoration: none;
     color: black;
+}
+ul{
+    list-style: none;
 }
 p{
     text-justify: auto;
@@ -19,6 +25,9 @@ footer{
     font-style: italic;
     position: relative;
     bottom: 0;
+}
+strong:hover{
+    cursor: pointer;
 }
 nav{
     -webkit-box-shadow: 42px 65px 37px -39px rgba(41,39,41,1);

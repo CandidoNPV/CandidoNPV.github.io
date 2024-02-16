@@ -189,7 +189,7 @@ const mostrarContact = ()=>{
     borrar();
     contact.style.display ="block"
     contact.innerHTML = `
-    <h2><p class="text-center">Puedes ponerte en contacto conmigo de las siguientes maneras</p></h2>
+    <h2><p class="text-center">Puedes ponerte en contacto <span>conmigo</span> de las siguientes maneras</p></h2>
               <div class="container redes-sociales">
                 <div class="contenedor-contacto text-center">
                 <a title="Correo" href="mailto:candidonpv@gmail.com?subject=Correo desde candidonpv.github.io" class="mail red col-6 col-sm-4 col-md-2 " target="_blank"><i class="fa-solid fa-envelope-open-text"></i></a>

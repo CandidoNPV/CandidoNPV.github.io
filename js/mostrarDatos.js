@@ -18,8 +18,8 @@ const mostrarIni = () =>{
     <div class="row text-center">
                 <div class="col-md-8 order-md-1 ">
                     <div class="intro mt-5">
-                        <h2>Hola, Soy Cándido</h2>
-                        <h3>Bienvenido a mi porfolio como desarrollador junior</h3>
+                        <h2>Hola, Soy <span>Cándido</span></h2>
+                        <h3>Bienvenido a mi porfolio como <span>desarrollador junior</span></h3>
                     </div>
                 </div>
                 <div class="col-md-3 order-md-2">
@@ -35,7 +35,7 @@ const mostrarAbout = ()=>{
     about.innerHTML = `
         
     <div class="texto ">
-    <h2>¿Quién soy?</h2>
+    <h2><span>¿Quién soy?</span></h2>
     <p>Soy un apasionado de la lectura, los animales y la tecnología, también una persona curiosa y con muchas ganas de entender el funcionamiento de las cosas, 
       lo que me hace estar en constante aprendizaje, proceso que disfruto al máximo.</p>
     <p>Tras estudiar derecho durante un par de años y comprobar que no era lo que me apasionaba, 
@@ -44,16 +44,16 @@ const mostrarAbout = ()=>{
       Ahora una vez terminado, mi objetivo es buscar la oportunidad de crecer en un puesto que me permita no solo poner en funcionamiento 
       las habilidades obtenidas en programación, pudiendo desarrollar software que sea útil para el día a día, sino también poder aprovechar 
       al máximo mi curiosidad, mis ganas de aprender y enfrentar en buena compañía los retos que aparezcan para seguir avanzando.</p>
-    <h2>Formación</h2>
+    <h2><strong>Formación</strong></h2>
   <br>
-    <h3 >Reglada</h3>
-    <ul >
+    <h3><span>Reglada</span></h3>
+    <ul>
       <li>• 2022/Actualidad --- Ciclo Superior Desarrollo Aplicaciones Web</li>
       <li>•	2015/2017 --- Ciclo Sistemas Microinformáticos y Redes</li>
       <li>•	2009/ 2011 ---- Bachillerato  </li>
     </ul>
-    <h3 >No reglada</h3>
-    <ul >
+    <h3><span>No reglada</span></h3>
+    <ul>
       <li>•	Introducción al desarrollo web I --- Google Actívate</li>
       <li>•	Introducción al desarrollo web II --- Google Actívate</li>
       <li>•	Diseño Web Profesional ---- Udemy</li>
@@ -65,7 +65,7 @@ const mostrarAbout = ()=>{
     </ul>
   </div>
 <div class="conocimientos text-center">
-  <p>Además, actualmente y gracias al ciclo y los cursos autodidactas, he usado las siguientes tecnologias, pudiendo ver los usos en mis <a onclick="mostrarProyect()"><strong>proyectos</strong></a></p>
+  <p>Además, actualmente y gracias al ciclo y los cursos autodidactas, he usado las siguientes <span>tecnologias</span>, pudiendo ver los usos en mis <a onclick="mostrarProyect()"><strong class="ruta">proyectos</strong></a></p>
   <div class="ico-cono " style="display: inline;">
     <div class="lenguajes mb-3">
       <p>Lenguajes</p>
@@ -90,7 +90,7 @@ const mostrarAbout = ()=>{
       <li>•	2010-2017 --- Transportes Turísticos Islas Canarias</li>
     </ul>
     </div>
-    <p>Puedes revisar mi curriculum aqui</p>
+    <p>Puedes revisar mi curriculum aquí</p>
     <a href="./cv/cv_candidonpv.pdf" class="cv" id="cv" target="_blank" title="CV">${getPdfIcon()}</i></a>
     
     

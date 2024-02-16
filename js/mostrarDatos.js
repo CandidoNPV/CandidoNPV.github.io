@@ -44,21 +44,26 @@ const mostrarAbout = ()=>{
       Ahora una vez terminado, mi objetivo es buscar la oportunidad de crecer en un puesto que me permita no solo poner en funcionamiento 
       las habilidades obtenidas en programación, pudiendo desarrollar software que sea útil para el día a día, sino también poder aprovechar 
       al máximo mi curiosidad, mis ganas de aprender y enfrentar en buena compañía los retos que aparezcan para seguir avanzando.</p>
-    <h2><strong>Formación</strong></h2>
-  <br>
-    <h3><span>Reglada</span></h3>
-    <ul>
-      <li>• 2022/Actualidad --- Ciclo Superior Desarrollo Aplicaciones Web</li>
-      <li>•	2015/2017 --- Ciclo Sistemas Microinformáticos y Redes</li>
-      <li>•	2009/ 2011 ---- Bachillerato  </li>
-    </ul>
-    <h3><span>No reglada</span></h3>
-    <ul>
-      <li>•	Introducción al desarrollo web I --- Google Actívate</li>
-      <li>•	Introducción al desarrollo web II --- Google Actívate</li>
-      <li>•	Diseño Web Profesional ---- Udemy</li>
-    </ul>
-    <p >Sin contar estos dos cursos que ya he finalizado, también estoy realizando de manera online</p>
+      <h2><strong>Formación</strong></h2>
+      <div class="row mt-3 mb-3">
+        <div class="col-sm-12 col-md-6">
+          <h3><span>Reglada</span></h3>
+          <ul>
+            <li>• 2022/Actualidad --- Ciclo Superior Desarrollo Aplicaciones Web</li>
+            <li>•	2015/2017 --- Ciclo Sistemas Microinformáticos y Redes</li>
+            <li>•	2009/ 2011 ---- Bachillerato  </li>
+          </ul>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <h3><span>No reglada</span></h3>
+          <ul>
+            <li>•	Introducción al desarrollo web I --- Google Actívate</li>
+            <li>•	Introducción al desarrollo web II --- Google Actívate</li>
+            <li>•	Diseño Web Profesional ---- Udemy</li>
+          </ul>
+        </div>
+      </div>
+    <p >Sin contar con la formación que ya he finalizado, también estoy realizando de manera online</p>
     <ul >
       <li>•	Introducción a Python ---- Microsoft Learn</li>
       <li>•	Desarrollo móvil para IOS y Swift ----- Udemy</li>

@@ -3,6 +3,7 @@ var about = document.getElementById('sobre-mi');
 var proyect = document.getElementById('proyectos');
 var contact = document.getElementById('contacto');
 
+
 const borrar = ()=>{
     ini.innerHTML = "";
     ini.style.display = "none";
@@ -111,78 +112,45 @@ const getPdfIcon = () => {
 };
 
 const mostrarProyect = ()=>{
-    borrar();
-    proyect.style.display ="block"
-    proyect.innerHTML = `
-    <div class=" text-center">
-                 <p>Por ahora solo tengo un proyecto propio, que estoy llevando a su versión web creando una API con los datos a mostrar</p>
-                 <div class="row justify-content-center">
-                      <div class="image">
-                        <img class="imgproye" src="./img/proyectos/propio/xus4me.png" title="Xus4me" >
-                        <a href="https://github.com/Kanosk/Proyectos/tree/main/Propios/Xus4me" target="_blank" aria-label="xus4me">
-                          <i class="proyect fa-solid fa-link"></i>
-                        </a>
-                      </div>
-                    </div>
-                 <p>Los demás proyectos son los creados en clase, ya siendo exámenes o trabajos y los creados haciendo cursos en internet</p>
-                 <p class="title">Proyectos creados en DAW</p>
-                 <div class="row justify-content-center">
-                      <div class="image">
-                        <img class="imgproye" src="./img/proyectos/daw/cargarApi.png" title="Usar API">
-                        <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/DAW/2o-a%C3%B1o/Consumir-Api" target="_blank" aria-label="Usar API">
-                          <i class="proyect fa-solid fa-link"></i>
-                        </a>
-                      </div>
-                      <div class="image">
-                        <img class="imgproye" src="./img/proyectos/daw/filament.png" title="Dashboard">
-                        <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/DAW/2o-a%C3%B1o/Dashboard-filament" target="_blank" aria-label="Dashboard">
-                          <i class="proyect fa-solid fa-link"></i>
-                        </a>
-                      </div>
-                      <div class="image">
-                        <img class="imgproye" src="./img/proyectos/daw/proyectoBase.png" title="Crud puro PHP">
-                        <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/DAW/1er-a%C3%B1o/proyectoBasePHP" target="_blank" aria-label="Crud en PHP">
-                          <i class="proyect fa-solid fa-link"></i>
-                        </a>
-                      </div>
-                      <div class="image">
-                        <img class="imgproye" src="./img/proyectos/daw/swingJava.png" title="Interfaz visual de Java">
-                        <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/DAW/1er-a%C3%B1o/proyectoSwing/proyectoSwing" target="_blank" aria-label="Java Swing">
-                          <i class="proyect fa-solid fa-link"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <p class="title">Proyectos creados con cursos online</p>
-                    <div class="row justify-content-center">
-                      <div class="image">
-                        <img class="imgproye" src="./img/proyectos/udemy/bootstrap.png" title="Uso de Bootstrap">
-                        <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/Udemy/Practica-Bootstrap" target="_blank" aria-label="Bootstrap">
-                          <i class="proyect fa-solid fa-link"></i>
-                        </a>
-                      </div>
-                      <div class="image">
-                        <img class="imgproye" src="./img/proyectos/udemy/galeria.png" title="Galeria de imágenes">
-                        <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/Udemy/proyecto-Galeria" target="_blank" aria-label="Galeria">
-                          <i class="proyect fa-solid fa-link"></i>
-                        </a>
-                      </div>
-                      <div class="image">
-                        <img class="imgproye" src="./img/proyectos/udemy/portafolio.png" title="Ejemplo Portfolio">
-                        <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/Udemy/Practica-Portafolio" target="_blank" aria-label="Portafolio">
-                          <i class="proyect fa-solid fa-link"></i>
-                        </a>
-                      </div>
-                      <div class="image">
-                        <img class="imgproye" src="./img/proyectos/udemy/restaurante.png" title="Ejemplo Restaurante">
-                        <a href="https://github.com/Kanosk/Proyectos/tree/main/Realizados%20en%20cursos/Udemy/Practica-Restaurante" target="_blank" aria-label="Restaurante">
-                          <i class="proyect fa-solid fa-link"></i>
-                        </a>
-                      </div>
-                    </div>
-                    <p class="title">Puedes ver mas en el repositorio <br>
-                      <a href="https://github.com/Kanosk/Proyectos/tree/main" target="_blank" class="ico" aria-label="Repositorio"><i class="fa-brands fa-github"></i></a></p>
-               </div>
+  borrar();
+  proyect.style.display ="block"
+  proyect.innerHTML=`
+  <div class="text-center">
+  <p>Por ahora solo tengo un proyecto propio, el cual estoy llevando a su versión web</p>
+  <p>Los demás proyectos son los creados en clase o haciendo cursos por mi cuenta</p>
+  </div>
+  <div class="row justify-content-center" id='cargaPro'></div>
+  `;
+  let cargaCard = document.getElementById('cargaPro');
+  proyectos.forEach((proyecto)=>{
+    const nuevoProyecto=document.createElement('div');
+    const plantilla=`
+    <div class="card-container">
+    <div class="card-face front-face">
+      <img src="${proyecto.foto}" alt="${proyecto.nombre}" class="mb-2"/>
+      <h2><span>${proyecto.nombre}</span></h2>
+      <p class="muted">${proyecto.idioma}</p>
+    </div>
+    <div class="card-face back-face">
+      <div class="container-about">
+        <span>
+          <h3>De qué va</h3>
+        </span>
+        <p class="protxt text-center">${proyecto.sobrePro}</p>
+        <div class="row">
+          <a href="${proyecto.enlace}" target="_blank"><i class="fa-solid fa-link" title="${proyecto.nombre}"></i></a>
+        </div>
+      </div>
+      </div>
+  </div>
     `;
+    nuevoProyecto.classList.add('card');
+    nuevoProyecto.classList.add('mt-2');
+    nuevoProyecto.classList.add('me-2');
+    nuevoProyecto.innerHTML=plantilla;
+    cargaCard.append(nuevoProyecto);
+});
+  
 }
 
 const mostrarContact = ()=>{

@@ -160,9 +160,9 @@ const mostrarContact = ()=>{
     <h2><p class="text-center">Puedes ponerte en contacto <span>conmigo</span> de las siguientes maneras</p></h2>
               <div class="container redes-sociales">
                 <div class="contenedor-contacto text-center">
-                <a title="Correo" href="mailto:candidonpv@gmail.com?subject=Correo desde candidonpv.github.io" class="mail red col-6 col-sm-4 col-md-2 " target="_blank"><i class="fa-solid fa-envelope-open-text"></i></a>
-                <a title="LinkedIn" href="https://www.linkedin.com/in/candido-nicolas-perez-verwer-971855220/" class="linkedin red col-6 col-sm-4 col-md-2 " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a title="Github" href="https://github.com/Kanosk" class="github red col-6 col-sm-4 col-md-2 " target="_blank"><i class="fa fa-github"></i></a>
+                <a title="Correo" href="mailto:candidonpv@gmail.com?subject=Correo desde candidonpv.github.io" class="mail red col-6 col-sm-4 col-md-3 " target="_blank"><i class="fa-solid fa-envelope-open-text"></i></a>
+                <a title="LinkedIn" href="https://www.linkedin.com/in/candido-nicolas-perez-verwer-971855220/" class="linkedin red col-6 col-sm-4 col-md-3 " target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a title="Github" href="https://github.com/Kanosk" class="github red col-6 col-sm-4 col-md-3 " target="_blank"><i class="fa fa-github"></i></a>
               </div>
               </div>
   `;

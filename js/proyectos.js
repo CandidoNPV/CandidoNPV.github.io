@@ -7,6 +7,7 @@ const proyectos=[
         idioma: 'Python / Kivy', 
         sobrePro:'Un selector usando un framework de Python para darle interfaz gráfica', 
         enlace:'https://github.com/Kanosk/Proyectos/tree/main/Propios/Xus4me'},
+        
         //Filament
         {foto:'img/proyectos/daw/filament.png', 
         nombre:'Dashboard', 
